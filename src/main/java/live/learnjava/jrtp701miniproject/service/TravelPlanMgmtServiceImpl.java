@@ -52,8 +52,7 @@ public class TravelPlanMgmtServiceImpl implements ITravelPlanManagementService {
 
 	@Override
 	public List<TravelPlan> showAllTravelPlans() {
-		// TODO Auto-generated method stub
-		return null;
+		return travelPlanRepo.findAll();
 	}
 
 	@Override
