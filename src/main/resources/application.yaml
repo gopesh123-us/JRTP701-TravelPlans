@@ -1,0 +1,67 @@
+#spring:
+#   config:
+#      activate:
+#         on-profile: mysql
+#   datasource:
+#    driver-class-name: com.mysql.cj.jdbc.Driver
+#    username: root
+#    url: jdbc:mysql://${MYSQL_HOST:localhost}:3306/travelplansDB
+#    password: Guruji123$
+#   application:
+#    name: demo
+#   jpa:
+#      database-platform: org.hibernate.dialect.MySQL8Dialect
+#      properties:
+#         hibernate:
+#            format_sql: 'true'
+#      show-sql: true
+#      hibernate:
+#         ddl-auto: update
+#server:
+#  port: '9090'
+#plan:
+#   module:
+#      messages:
+#         save-success: Travel Plan is saved with id value
+#         save-failure: Travel Plan is not saved with value
+#         find-by-id-failure: Travel  Plan is not found
+#         update-success: Travel Plan is updated
+#         update-failure: Travel Plan not found found for updation.
+#         delete-success: Travel Plan is deleted
+#         delete-failure: Travel Plan is not found for deletion
+#         change-travel-plan-success: Travel Plan status is changed
+#         change-travel-plan-failure: Travel Plan not found for changing status
+---
+spring:
+#  config:
+#     activate:
+#        on-profile: h2
+  datasource:
+    username: gopesh
+    url: jdbc:h2:mem:travelPlansDB
+    password: gopesh
+  application:
+    name: jrtp701miniproject_train_enquiry
+  jpa:
+    database-platform: org.hibernate.dialect.H2Dialect
+    properties:
+      hibernate:
+        format_sql: 'true'
+    hibernate:
+      ddl-auto: update
+    show-sql: 'true' 
+server:
+  port: '9090'
+plan:
+   module:
+      messages:
+         save-success: Travel Plan is saved with id value
+         save-failure: Travel Plan is not saved with value
+         find-by-id-failure: Travel  Plan is not found
+         update-success: Travel Plan is updated
+         update-failure: Travel Plan not found found for updation.
+         delete-success: Travel Plan is deleted
+         delete-failure: Travel Plan is not found for deletion
+         status-change-success: Travel Plan status is changed
+         status-change-failure: Travel Plan not found for changing status
+

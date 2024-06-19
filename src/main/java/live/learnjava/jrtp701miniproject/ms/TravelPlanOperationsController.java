@@ -62,7 +62,7 @@ public class TravelPlanOperationsController {
 		}
 	}
 
-	@GetMapping("/find/{planid}")
+	@GetMapping("/find/{planId}")
 	public ResponseEntity<?> showTravelPlanById(@PathVariable Integer planId) {
 		try {
 			TravelPlan plan = planService.showTravelPlanById(planId);
@@ -85,7 +85,7 @@ public class TravelPlanOperationsController {
 		}
 	}
 
-	@DeleteMapping("/delete/{planid}")
+	@DeleteMapping("/delete/{planId}")
 	public ResponseEntity<?> removeTravelPlanByPlanId(@PathVariable Integer planId) {
 		// use service
 		try {
