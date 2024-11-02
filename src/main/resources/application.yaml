@@ -6,7 +6,7 @@
 #    driver-class-name: com.mysql.cj.jdbc.Driver
 #    username: root
 #    url: jdbc:mysql://${MYSQL_HOST:localhost}:3306/travelplansDB
-#    password: Guruji123$
+#    password: ****
 #   application:
 #    name: demo
 #   jpa:
